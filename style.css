@@ -1573,6 +1573,49 @@ li {
   border-color: #FFCC33;
 }
 
+textarea.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  resize: vertical;
+  min-height: 100px;
+  transition: border 0.3s;
+}
+
+textarea.form-control:focus {
+  border-color: #0066cc;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+
+.rating-stars {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.rating-stars input {
+  display: none;
+}
+
+.rating-stars label {
+  color: #ccc;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.rating-stars input:checked ~ label,
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+  color: gold; 
+}
+
+
 @media (max-width: 1500px) {
   .testi-style1 .testi-client {
     padding-right: 20px;

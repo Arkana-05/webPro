@@ -390,7 +390,7 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="position-relative">
-                        <form action="#" class="form-style">
+                        <form action="apply.php" class="form-style" enctype="multipart/form-data" method="POST">
                             <div class="form-inner">
                                 <h3 class="form-title h5">Join over <span class="text-theme">50,000 students</span> who’ve now registered for their courses. Don’t miss out.</h3>
                                 <div class="row">
@@ -405,7 +405,7 @@
                                     </div>
                                     <div class="col-md-6 col-xl-12">
                                         <div class="form-group">
-                                            <input type="text" name="name" id="name" placeholder="Complate Name">
+                                            <input type="text" name="name" id="name" placeholder="Complete Name">
                                         </div>
                                     </div>
                                     
@@ -422,11 +422,23 @@
                                     </div>
                                     <div class="col-md-6 col-xl-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" id="phone" placeholder="Phone No">
+                                            <textarea class="form-control" name="testimoni" id="testimoni" placeholder="Testimoni" rows="4"></textarea>
                                         </div>
                                     </div>
+                                    <div class="col-md-6 col-xl-12">
+                                        <div class="form-group">
+                                            <div id="rating" class="rating-stars">
+                                                <input type="radio" name="rating" id="star5" value="5"><label for="star5">&#9733;</label>
+                                                <input type="radio" name="rating" id="star4" value="4"><label for="star4">&#9733;</label>
+                                                <input type="radio" name="rating" id="star3" value="3"><label for="star3">&#9733;</label>
+                                                <input type="radio" name="rating" id="star2" value="2"><label for="star2">&#9733;</label>
+                                                <input type="radio" name="rating" id="star1" value="1"><label for="star1">&#9733;</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="col-12 text-center">
-                                        <button type="button" class="f-btn">Apply Today</button>
+                                        <button type="submit" class="f-btn">Apply Today</button>
                                         <a class="form-link" href="about.html">Frequently Asked Questions</a>
                                     </div>
                                 </div>
@@ -439,7 +451,7 @@
         </div>
     </section>
     
-    <section class="testimoni-section overflow-hidden space-bottom p-5">
+    <section id="testimoni-section" class="testimoni-section overflow-hidden space-bottom p-5">
         <div class="container">
           <div class="title-area text-center">
             <span class="sec-subtitle">WHAT PEOPLE SAY</span>
@@ -447,7 +459,13 @@
           </div>
       
           <!-- Ini adalah container untuk slick -->
+
           <div class="slider-testimoni mt-5">
+
+          <?php 
+          include 'testimoni.php';
+          ?>
+
             <div class="testi-style1">
               <div class="testi-content">
                 <p class="testi-text">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar ”</p>
@@ -456,48 +474,6 @@
                 <img src="assets/img/testimonial-2-1.png" alt="author">
                 <h3 class="testi-name h5">Jessica Moniqa</h3>
                 <span class="testi-degi">B.Tech-Civil , 2017-2022</span>
-                <div class="testi-rating">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-            </div>
-      
-            <div class="testi-style1">
-              <div class="testi-content">
-                <p class="testi-text">“ I had the opportunity to meet with the dynamic & distinguishe faculties, who are highly qualified & friendly patients. With their assist & guidance I… ”</p>
-              </div>
-              <div class="testi-client">
-                <img src="assets/img/testimonial-2-2.png" alt="author">
-                <h3 class="testi-name h5">Willimes Parkar</h3>
-                <span class="testi-degi">CSE Computer , 2017-2022</span>
-                <div class="testi-rating">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-            </div>
-      
-            <div class="testi-style1">
-              <div class="testi-content">
-                <p class="testi-text">“ So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's ”</p>
-              </div>
-              <div class="testi-client">
-                <img src="assets/img/testimonial-2-3.png" alt="author">
-                <h3 class="testi-name h5">Silverster Scott</h3>
-                <span class="testi-degi">DBBL Pvt Ltd, 2011-2015</span>
-                <div class="testi-rating">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-            </div>
-      
-            <div class="testi-style1">
-              <div class="testi-content">
-                <p class="testi-text">“ One brave soul did take a stab at translating the almost-not-quite-Latin. According to The Guardian, Jaspreet Singh Boparai undertook the challenge ”</p>
-              </div>
-              <div class="testi-client">
-                <img src="assets/img/testimonial-2-4.png" alt="author">
-                <h3 class="testi-name h5">Marry Rose</h3>
-                <span class="testi-degi">Moto Build LTD, 2015-2018</span>
                 <div class="testi-rating">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
