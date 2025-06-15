@@ -1,7 +1,7 @@
 <?php
 include 'koneksi.php';
 
-$sql = "SELECT nama, img, course, testimoni, rating FROM user ORDER BY id_user DESC";
+$sql = "SELECT nama, img, course, testimoni, rating FROM user ORDER BY id DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -11,7 +11,12 @@ if ($result->num_rows > 0) {
         echo '    <p class="testi-text">“ ' . htmlspecialchars($row['testimoni']) . ' ”</p>';
         echo '  </div>';
         echo '  <div class="testi-client">';
-        echo '    <img src="assets/img/apply/' . htmlspecialchars($row['img']) . '" alt="Foto Pengguna">';
+        if (!empty(trim($row['img']))) {
+            echo '<img src="assets/img/apply/' . htmlspecialchars($row['img']) . '" alt="Foto Pengguna">';
+        } else {
+            echo '<img src="assets/img/anon.jpeg" alt="Foto Pengguna">';
+        }
+
         echo '    <h3 class="testi-name h5">' . htmlspecialchars($row['nama']) . '</h3>';
         echo '    <span class="testi-degi">' . htmlspecialchars($row['course']). '</span>';
         echo '    <div class="testi-rating">';

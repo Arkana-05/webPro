@@ -19,31 +19,25 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto col-xl align-self-stretch">
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+                            <a href="index.php"><img src="assets/img/logo.svg" alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-auto">
                         <nav class="main-menu d-none d-lg-block">
                             <ul>
-                                <li> <a href="about.html">Home</a> </li>
-                                <li> <a href="#about">About Us</a> </li>
+                                <li> <a href="index.php">Home</a> </li>
+                                <li> <a href="about.php">About Us</a> </li>
                                 <li class="menu-item-has-children">
                                     <a href="course.html">Courses</a>
                                     <ul class="sub-menu">
-                                        <li><a href="course.html">Courses 1</a></li>
-                                        <li><a href="courses-2.html">Courses 2</a></li>
-                                        <li><a href="course-details.html">Course Details 1</a></li>
-                                        <li><a href="course-details-2.html">Course Details 2</a></li>
+                                        <li><a href="develop.html">Development</a></li>
+                                        <li><a href="desain.html">Desain Grafis</a></li>
+                                        <li><a href="tech.html">Technology</a></li>
+                                        <li><a href="ai.html">AI</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children">
-                                    <a href="blog.html">Tutor</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="team.html">Our Tutors</a></li>
-                                        <li><a href="team-details.html">Tutor Details</a></li>
-                                        <li><a href="become-tutor.html">Become Tutor</a></li>
-                                        <li><a href="find-tutor.html">Find Tutor</a></li>
-                                    </ul>
+                                <li>
+                                    <a href="tutor.html">Tutor</a>
                                 </li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
@@ -55,7 +49,7 @@
                     <div class="col-auto d-none d-xl-block">
                         <div class="header-btns">
                             <button type="button" class="searchBoxTggler"><i class="bi bi-search"></i></button>
-                            <a href="find-program.html" class="f-btn find"><i class="bi bi-mortarboard"></i> Find Program</a>
+                            <a href="find-program.html" class="f-btn find"><i class="bi bi-mortarboard"></i> Find Course</a>
                         </div>
                     </div>
                 </div>
@@ -72,8 +66,8 @@
         </div>
         <div class="offcanvas-body">
             <ul class="list-unstyled">
-            <li><a href="about.html" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="index.php" class="nav-link">Home</a></li>
+            <li><a href="about.php" class="nav-link">About Us</a></li>
             <li>
                 <a class="nav-link" data-bs-toggle="collapse" href="#coursesSub" role="button" aria-expanded="false" aria-controls="coursesSub">
                 Courses <i class="bi bi-plus"></i>
@@ -104,6 +98,7 @@
             </ul>
         </div>
     </div>
+
 
     <section class="hero-layout" data-fade="true" data-dots="true">
         <div>
@@ -199,7 +194,7 @@
                             </div>
 
                             <div class="hero-btns">
-                                <a href="about.html" class="f-btn info"><i class="bi bi-mortarboard"></i> Get More Info</a>
+                                <a href="about.php" class="f-btn info"><i class="bi bi-mortarboard"></i> Get More Info</a>
                             </div>
                         </div>
                     </div>
@@ -396,6 +391,19 @@
                                 <div class="row">
                                     <div class="col-md-6 col-xl-12">
                                         <div class="form-group">
+                                            <div id="rating" class="rating-stars">
+                                                <center>
+                                                    <input type="radio" name="rating" id="star5" value="5"><label for="star5">&#9733;</label>
+                                                    <input type="radio" name="rating" id="star4" value="4"><label for="star4">&#9733;</label>
+                                                    <input type="radio" name="rating" id="star3" value="3"><label for="star3">&#9733;</label>
+                                                    <input type="radio" name="rating" id="star2" value="2"><label for="star2">&#9733;</label>
+                                                    <input type="radio" name="rating" id="star1" value="1"><label for="star1">&#9733;</label>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-12">
+                                        <div class="form-group">
                                             <label for="img" class="custom-file-upload">
                                                 <i class="bi bi-camera-fill"></i>
                                                 <span>Silakan upload foto Anda</span>
@@ -425,21 +433,9 @@
                                             <textarea class="form-control" name="testimoni" id="testimoni" placeholder="Testimoni" rows="4"></textarea>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-xl-12">
-                                        <div class="form-group">
-                                            <div id="rating" class="rating-stars">
-                                                <input type="radio" name="rating" id="star5" value="5"><label for="star5">&#9733;</label>
-                                                <input type="radio" name="rating" id="star4" value="4"><label for="star4">&#9733;</label>
-                                                <input type="radio" name="rating" id="star3" value="3"><label for="star3">&#9733;</label>
-                                                <input type="radio" name="rating" id="star2" value="2"><label for="star2">&#9733;</label>
-                                                <input type="radio" name="rating" id="star1" value="1"><label for="star1">&#9733;</label>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <div class="col-12 text-center">
-                                        <button type="submit" class="f-btn">Apply Today</button>
-                                        <a class="form-link" href="about.html">Frequently Asked Questions</a>
+                                        <button type="submit" class="f-btn">Send</button>
                                     </div>
                                 </div>
                             </div>
@@ -466,19 +462,7 @@
           include 'testimoni.php';
           ?>
 
-            <div class="testi-style1">
-              <div class="testi-content">
-                <p class="testi-text">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar ”</p>
-              </div>
-              <div class="testi-client">
-                <img src="assets/img/testimonial-2-1.png" alt="author">
-                <h3 class="testi-name h5">Jessica Moniqa</h3>
-                <span class="testi-degi">B.Tech-Civil , 2017-2022</span>
-                <div class="testi-rating">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
     </section>
@@ -491,7 +475,7 @@
                     <div class="col-md-6 col-xl-3">
                         <div class="widget footer-widget">
                             <div class="vs-widget-about">
-                                <div class="footer-logo"> <a href="index.html"><img src="assets/img/logo-white.svg" alt="logo"></a> </div>
+                                <div class="footer-logo"> <a href="index.php"><img src="assets/img/logo-white.svg" alt="logo"></a> </div>
                                 <p class="footer-text">Lorem ipsum dolor sit amet, conse ctet rem ipsdolor sit amet. sum do lor sit amet, consectet edolor sit amet, comod.</p>
                                 <div class="footer-media">
                                     <div class="media-icon"><i class="bi bi-file-pdf-fill"></i></div>
@@ -545,7 +529,7 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="text-center col-lg-auto">
-                        <p class="copyright-text">Copyright <i class="bi bi-c-circle"></i> 2023 <a href="index.html">Educino</a>. All Rights Reserved By <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
+                        <p class="copyright-text">Copyright <i class="bi bi-c-circle"></i> 2023 <a href="index.php">Educino</a>. All Rights Reserved By <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <div class="social-style">
